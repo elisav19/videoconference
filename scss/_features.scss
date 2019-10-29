@@ -1,0 +1,51 @@
+.features {
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .features-text {
+      transform: translateY(-175%);
+    }
+
+    .features-item {
+      transform: translateY(-150%);
+    }
+  }
+}
+
+.features-item {
+  width: 280px;
+  transition: all 0.5s linear;
+}
+
+.features-icon {
+  margin-bottom: 30px;
+
+  font-size: 50px;
+  color: #cfa144;
+}
+
+.features-title {
+  font-family: Garnata Regular;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.features-text {
+  width: 280px;
+
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #fff;
+
+  position: absolute;
+  top: 150%;
+  left: 0;
+  z-index: 1;
+
+  transform: translateY(150%);
+
+  transition: all 0.5s linear;
+}

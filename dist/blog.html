@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sircus@3.0.0/css/sircus.min.css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Videoconference</title>
+
+</head>
+
+<body>
+    <div id="before-load">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <a class="toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+        </div>
+
+        <nav class="nav justify-content-center align-items-center text-center">
+            <ul class=" navbar-nav" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About as</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-active" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="social">
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-vimeo"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-tumblr-square"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-skype"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-lastfm"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-dropbox"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+            <!-- /.social -->
+        </nav>
+    </header>
+
+    <section class="section text-center">
+        <div class="container-fluid px-5">
+
+            <h1 class="section-title">Blog</h1>
+            <h3 class="section-subtitle">Our latest news!</h3>
+
+
+            <div class="projects-wrapper">
+                <ul id="filterNav" class="filters-list d-flex justify-content-center">
+                    <li data-filter="*" class="active">all</li>
+                    <li data-filter=".photo">photo</li>
+                    <li data-filter=".gallery">gallery</li>
+                    <li data-filter=".video">video</li>
+                    <li data-filter=".quote">quote</li>
+                </ul>
+
+                <div class="projects-list">
+
+                    <div class="project-item quote">
+                        <div class="project-wrapper">
+                            <p><span>07/</span>apr.2015. <em>John Doe</em></p>
+                            <h1>"Talk is cheap. Show me the code."</h1>
+                            <h2>Linus Torvalds</h2>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item photo">
+                        <div class="project-wrapper">
+                            <p><span>05/</span>apr.2015. <em>John Doe</em></p>
+                            <a class="d-block" href="post.html">
+                                <img class="img-fluid" src="assets/img/blog/4.jpg" alt="">
+                            </a>
+                            <a class="project-link my-4" href="post.html">Moments from a life</a>
+                            <p>Etiam in nulla arcu, ut vehicula velit. Vivamus dapibus rutrum mi ut aliquam. In hac
+                                habitasse platea dictumst.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item gallery">
+                        <div class="project-wrapper">
+                            <p><span>01/</span>apr.2015. <em>John Doe</em></p>
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner mb-3">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/blog/11.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/blog/12.jpg" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/blog/6.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="project-link mb-4" href="post.html">Day of photography</a>
+                            <p>Vivamus dapibus rutrum. Etiam in nulla arcu, ut vehicula velit.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item video">
+                        <div class="project-wrapper">
+                            <p><span>28/</span>mar.2015. <em>John Doe</em></p>
+                            <a class="d-block" href="#">
+                                <iframe title="vimeo-player" src="https://player.vimeo.com/video/112766731" width="100%"
+                                    height="210" frameborder="0"></iframe>
+                            </a>
+                            <a class="project-link my-4" href="post.html">Icy Rocky Wawes</a>
+                            <p>Vivamus dapibus rutrum. Etiam in nulla arcu, ut vehicula velit.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item quote">
+                        <div class="project-wrapper">
+                            <p><span>23/</span>mar.2015. <em>John Doe</em></p>
+                            <h1>"How you look at it is pretty much how you'll see it"</h1>
+                            <h2>Rasheed Ogunlaru</h2>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item quote">
+                        <div class="project-wrapper">
+                            <p><span>09/</span>mar.2015. <em>John Doe</em></p>
+                            <h1>"Recognizing the need is the primary for design."</h1>
+                            <h2>Charles Eames</h2>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item video">
+                        <div class="project-wrapper">
+                            <p><span>16/</span>mar.2015. <em>John Doe</em></p>
+                            <a class="d-block" href="#">
+                                <iframe title="vimeo-player" src="https://player.vimeo.com/video/88883554" width="100%"
+                                    height="100%" frameborder="0"></iframe>
+                            </a>
+                            <a class="project-link my-4" href="post.html">Web design conference</a>
+                            <p>Vivamus dapibus rutrum. Etiam in nulla arcu, ut vehicula velit. Donec vel mi sem. Etiam
+                                in nulla arcu, ut vehicula velit. Vivamus dapibus rutrum mi ut aliquam. In hac habitasse
+                                platea dictumst.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item photo">
+                        <div class="project-wrapper">
+                            <p><span>19/</span>mar.2015. <em>John Doe</em></p>
+                            <a class="d-block" href="post.html">
+                                <img class="img-fluid" src="https://picsum.photos/700/700?random=6" alt="">
+                            </a>
+                            <a class="project-link my-4" href="post.html">Moments from a life</a>
+                            <p>Etiam in nulla arcu, ut vehicula velit. Vivamus dapibus rutrum mi ut aliquam. In hac
+                                habitasse platea dictumst.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item photo">
+                        <div class="project-wrapper">
+                            <p><span>07/</span>mar.2015. <em>John Doe</em></p>
+                            <a class="d-block" href="post.html">
+                                <img class="img-fluid" src="https://picsum.photos/700/400?random=1" alt="">
+                            </a>
+                            <a class="project-link my-4" href="post.html">Photo by Henk</a>
+                            <p>Donec vel mi sem. Etiam in nulla arcu, ut vehicula velit.</p>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item quote">
+                        <div class="project-wrapper">
+                            <p><span>05/</span>mar.2015. <em>John Doe</em></p>
+                            <h1>"The difficulty lies not so much in developing new ideas as in escaping from old ones."
+                            </h1>
+                            <h2>John Maynard Keynes</h2>
+                            <div class="readmore">
+                                <a href="post.html" data-chaffle="en">read more</a>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.projects-list -->
+            </div>
+            <!-- /.projects-wrapper -->
+
+        </div><!-- container -->
+    </section>
+
+    <!-- Footer -->
+    <footer class=" page-footer">
+        <div class="container">
+
+            <div class="row d-flex text-center justify-content-center flex-column">
+                <a class="navbar-brand mr-0" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo.png" alt="">
+                </a>
+                <div class="row footer-social">
+                    <div class="col-12">
+                        <ul class="w-100 p-0 m-0">
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-text text-center">
+                    Copyright 2015 IG Design <br>
+                    all rights reserved
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js">
+    </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/chaffle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

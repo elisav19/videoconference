@@ -1,0 +1,52 @@
+.page-footer {
+    padding: 75px 0;
+
+    background-color: #000;
+
+    .navbar-brand {
+        margin-bottom: 50px;
+    }
+
+    .footer-social {
+        margin-bottom: 50px;
+    }
+}
+
+.footer-social-item {
+    width: 35px;
+    height: 35px;
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+    list-style: none;
+    display: inline-block;
+
+    background: #323232;
+    border-radius: 50%;
+    position: relative;
+
+    transition: all 300ms linear;
+
+    &:hover {
+        background: #cfa144;
+    }
+
+    i {
+        font-size: 14px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+.footer-text {
+    font-size: 13px;
+    line-height: 2;
+    color: #f9f9f9;
+    letter-spacing: 3px;
+}

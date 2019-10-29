@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Videoconference</title>
+</head>
+
+<body>
+    <div id="before-load">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+    <div id="hide">
+
+        <!-- Header -->
+        <header class="header" id="navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+                <a class="toggle-menu" href="#">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </a>
+            </div>
+
+            <nav class="nav justify-content-center align-items-center text-center">
+                <ul class=" navbar-nav" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About as</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="social">
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-vimeo"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-tumblr-square"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-skype"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-soundcloud"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-lastfm"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-dropbox"></i>
+                    </a>
+                    <a class="social-item" href="#" target="_blanck">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+                <!-- /.social -->
+            </nav>
+        </header>
+
+        <!-- Content -->
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Portfolio</h1>
+                <h3 class="section-subtitle">Digital solutions that inspire</h3>
+
+                <div class="projects">
+                    <div class="row no-gutters">
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal1" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=1" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal2" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=2" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal3" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=3" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal4" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=4" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal5" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=5" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal6" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=6" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal7" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=7" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <div class="project-content">
+                                    <h4 class="project-title">Project title</h4>
+                                    <h5 class="project-subtitle">Project subtitle</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal8" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=8" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="project">
+                                <a href="#myModal9" class="animated" onclick="showModal()" role="button"
+                                    data-toggle="modal">
+                                    <div class="view">
+                                        <img src="https://picsum.photos/800?random=9" class="project-photo img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="project-content">
+                                        <h4 class="project-title">Project title</h4>
+                                        <h5 class="project-subtitle">Project subtitle</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.projects -->
+        </section>
+
+        <!-- Footer -->
+        <footer class=" page-footer">
+            <div class="container">
+
+                <div class="row d-flex text-center justify-content-center flex-column">
+                    <a class="navbar-brand mr-0" href="index.html">
+                        <img class="img-fluid" src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="row footer-social">
+                        <div class="col-12">
+                            <ul class="w-100 p-0 m-0">
+                                <li class="footer-social-item">
+                                    <a href="#" target="_blanck">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social-item">
+                                    <a href="#" target="_blanck">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social-item">
+                                    <a href="#" target="_blanck">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-social-item">
+                                    <a href="#" target="_blanck">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-text text-center">
+                        Copyright 2015 IG Design <br>
+                        all rights reserved
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </footer>
+
+    </div>
+    <!-- /#hide -->
+
+    <!-- myModal1 -->
+    <div class="modal mb-5" id="myModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=10" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=11" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=12" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=13" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal1 -->
+
+    <!-- myModal2 -->
+    <div class="modal mb-5" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=14" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=15" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=16" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=17" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal2 -->
+
+    <!-- myModal3 -->
+    <div class="modal mb-5" id="myModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=18" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=19" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=20" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=21" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal3 -->
+
+    <!-- myModal4 -->
+    <div class="modal mb-5" id="myModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=22" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=23" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=24" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=25" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal4 -->
+
+    <!-- myModal5 -->
+    <div class="modal mb-5" id="myModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=26" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=27" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=28" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=29" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal5 -->
+
+    <!-- myModal6-->
+    <div class="modal mb-5" id="myModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=30" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=31" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=32" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=33" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal6 -->
+
+    <!-- myModal7 -->
+    <div class="modal mb-5" id="myModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=34" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=35" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=36" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=37" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal7 -->
+
+    <!-- myModal8 -->
+    <div class="modal mb-5" id="myModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=38" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=39" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=40" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=41" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal8 -->
+
+    <!-- myModal9 -->
+    <div class="modal mb-5" id="myModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content">
+                <div class="view">
+                    <img src="https://picsum.photos/1200/500?random=42" alt="" class="modal-img img-fluid">
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="hideModal()" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="result">
+                    <h1 class="modal-title">Project title</h1>
+                    <h2 class="modal-subtitle">Project subtitle</h2>
+
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=43" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=44" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="view">
+                                    <img class="img-fluid" src="https://picsum.photos/1200/800?random=45" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="project-info">
+                                    <h3>Project details</h3>
+                                    <h4>
+                                        <b>Date: </b>August 23, 2014
+                                    </h4>
+                                    <h4>
+                                        <b>Client: </b>ThemeForest
+                                    </h4>
+                                    <h4>
+                                        <b>Category: </b> <a href="#">HTML Templates</a>, <a href="#">WordPress
+                                            Themes</a>
+                                    </h4>
+                                    <h4>
+                                        <b>Task: </b>Company Website
+                                    </h4>
+                                    <h4>
+                                        <b>Website: </b> <a href="#">Visit Online</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /myModal9 -->
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js">
+    </script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.toggle-menu {
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.toggle-menu i {
+    width: 20px;
+    height: 2px;
+
+    display: block;
+    background: #fff;
+
+    position: absolute;
+    left: 10px;
+
+    transition: all .2s linear;
+}
+
+.toggle-menu i:nth-child(1) {
+    top: 5px;
+}
+
+.toggle-menu i:nth-child(2) {
+    top: 10px;
+}
+
+.toggle-menu i:nth-child(3) {
+    top: 16px;
+}
+
+.open-menu i:nth-child(1) {
+    top: 10px;
+    transform: rotateZ(45deg);
+}
+
+.open-menu i:nth-child(2) {
+    background: transparent;
+}
+
+.open-menu i:nth-child(3) {
+    top: 10px;
+    transform: rotateZ(135deg);
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sircus@3.0.0/css/sircus.min.css" charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Videoconference</title>
+
+</head>
+
+<body>
+    <div id="before-load">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <a class="toggle-menu" href="#">
+                <i></i>
+                <i></i>
+                <i></i>
+            </a>
+        </div>
+
+        <nav class="nav justify-content-center align-items-center text-center">
+            <ul class=" navbar-nav" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About as</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <div class="social">
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-vimeo"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-tumblr-square"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-skype"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-lastfm"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-dropbox"></i>
+                </a>
+                <a class="social-item" href="#" target="_blanck">
+                    <i class="fab fa-behance"></i>
+                </a>
+            </div>
+            <!-- /.social -->
+        </nav>
+    </header>
+
+    <section class="section text-center">
+        <div class="container">
+
+            <h1 class="section-title">Contact Us</h1>
+            <h3 class="section-subtitle">Get in touch!</h3>
+
+            <section class="mb-5">
+
+                <div class="row">
+                    <div class="col-md-12 mb-md-0 mb-5">
+                        <form class="mb-5" id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="contact-text">Your name: *</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="contact-text">Your email: *</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message" class="contact-text">Your message: *</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="contact-btn" href="#">submit</a>
+                        </div>
+                        <div class="status"></div>
+
+                    </div>
+                    <!-- /.col-md-12 -->
+
+                </div>
+                <!-- /.row -->
+
+            </section>
+
+        </div><!-- container -->
+    </section>
+
+    <section class=" section section-contact">
+        <div class="contact-container">
+
+            <div class="row">
+                <div class="col-md-4 contact-block">
+                    <h2>Call us</h2>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ion-icon class="icon pr-2 pt-2" name="call"></ion-icon>
+                        <h3>+381 5 313 345</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 contact-block">
+                    <h2>Address</h2>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ion-icon class="icon pr-2 pt-2" name="pin"></ion-icon>
+                        <h3>str. Pușkin 38, Bălți 3100</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 contact-block">
+                    <h2>Email</h2>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <ion-icon class="icon pr-2 pt-2" name="mail"></ion-icon>
+                        <h3>support@usarb.com</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.438286712898!2d27.919105215875202!3d47.753552485807624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb672fbf9e077d%3A0x73a94903f24050f3!2z0JHQk9CjINCQ0LvQtdC60YMg0KDRg9GB0YHQvg!5e0!3m2!1sru!2s!4v1572253661285!5m2!1sru!2s"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+    <!-- Footer -->
+    <footer class=" page-footer">
+        <div class="container">
+
+            <div class="row d-flex text-center justify-content-center flex-column">
+                <a class="navbar-brand mr-0" href="index.html">
+                    <img class="img-fluid" src="assets/img/logo.png" alt="">
+                </a>
+                <div class="row footer-social">
+                    <div class="col-12">
+                        <ul class="w-100 p-0 m-0">
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="#" target="_blanck">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-text text-center">
+                    Copyright 2015 IG Design <br>
+                    all rights reserved
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js">
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

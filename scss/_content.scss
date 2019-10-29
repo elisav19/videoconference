@@ -1,0 +1,113 @@
+.content {
+    &-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: column nowrap;
+        transform: translateY($content-offset);
+        will-change: transform;
+        backface-visibility: hidden;
+        @include transition($transition-speed, all, cubic-bezier(0.22, 0.44, 0, 1));
+    }
+
+    &-title {
+        margin-bottom: 35px;
+        margin-left: 30px;
+
+        font-family: Garnata Regular;
+        font-size: 90px;
+        color: #fff;
+        letter-spacing: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    &-subtitle {
+        margin-bottom: 70px;
+        padding: 12px 25px;
+
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        background: #000;
+        background-size: cover;
+    }
+
+    &-text {
+        margin-bottom: 70px;
+
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+
+    &-social-item {
+        width: 33px;
+        height: 33px;
+        margin-left: 2px;
+        margin-right: 2px;
+
+        list-style: none;
+        display: inline-block;
+
+        background: #000;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+        transition: all 300ms linear;
+
+        i {
+            font-size: 12px;
+            color: #fff;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        &:hover {
+            background: #fff;
+
+            i {
+                color: $yellow;
+            }
+        }
+
+    }
+
+    &-btn {
+        min-width: 150px;
+        max-width: 200px;
+        display: block;
+
+        margin: 0 auto;
+        padding: 13px 30px;
+
+        font-size: 16px;
+        color: #000;
+        letter-spacing: 2px;
+        text-align: center;
+
+        border-radius: 50px;
+
+        background: #fff;
+
+        transition: all .1s linear;
+
+        &:hover {
+            color: #fff;
+            background: $yellow;
+        }
+    }
+}

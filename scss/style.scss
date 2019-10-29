@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Garnata Regular;
+  src: url(../font/garnata-display-font/GarnataRegular.woff);
+}
+
+body {
+  background: #fff;
+  font-family: "Inconsolata";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  color: #747474;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+
+  &-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hideme {
+  display: none;
+}
+
+.padding-small {
+  padding: 60px 0;
+}
+
+.item-content {
+  color: #fff;
+}
+
+@import "_variables";
+@import "_preloader";
+@import "_header";
+@import "_toogle-menu";
+@import "_social";
+@import "_parallax";
+@import "_content";
+@import "_project";
+@import "_section";
+@import "_modal";
+@import "_team";
+@import "_features";
+@import "_about";
+@import "_services";
+@import "_blog";
+@import "_post";
+@import "_contact";
+@import "_footer";
