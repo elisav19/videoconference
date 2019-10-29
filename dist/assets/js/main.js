@@ -14,8 +14,6 @@ Array.prototype.forEach.call(elements, function (el) {
     });
 });
 
-
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -149,11 +147,15 @@ owl2.owlCarousel({
 });
 
 function showModal() {
-    $('#hide').addClass("hideme zoomIn");
+    $('#hide').addClass("hideme");
+    $('.modal').removeClass("overflow-hidden");
+    $('body').addClass("overflow-hidden");
 }
 
 function hideModal() {
-    $('#hide').removeClass("hideme zoomIn");
+    $('#hide').removeClass("hideme");
+    $('.modal').addClass("overflow-hidden");
+    $('body').removeClass("overflow-hidden");
 }
 
 $(".service").hover(function () {

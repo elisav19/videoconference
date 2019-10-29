@@ -46,3 +46,11 @@
     right: 50px;
     z-index: 1;
 }
+
+.fade {
+    transition: all .1 linear;
+}
+
+.top {
+    transition: all .1s linear;
+}

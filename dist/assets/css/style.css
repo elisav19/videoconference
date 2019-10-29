@@ -21,7 +21,10 @@ body {
     padding-right: 0; }
 
 .hideme {
-  display: none; }
+  opacity: 0; }
+
+.hide-overflow {
+  overflow: hidden; }
 
 .padding-small {
   padding: 60px 0; }
@@ -432,6 +435,12 @@ body {
   position: absolute;
   right: 50px;
   z-index: 1; }
+
+.fade {
+  transition: all .1 linear; }
+
+.top {
+  transition: all .1s linear; }
 
 .team:hover .none {
   display: block; }

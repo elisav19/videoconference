@@ -26,7 +26,11 @@ body {
 }
 
 .hideme {
-  display: none;
+  opacity: 0;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }
 
 .padding-small {
