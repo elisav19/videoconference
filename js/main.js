@@ -126,7 +126,7 @@ owl2.owlCarousel({
     responsive: {
         0: {
             items: 2,
-            margin: 100
+            margin: 70
         },
         620: {
             items: 3,
@@ -149,13 +149,13 @@ owl2.owlCarousel({
 function showModal() {
     $('#hide').addClass("hideme");
     $('.modal').removeClass("overflow-hidden");
-    $('body').addClass("overflow-hidden");
+    $('html').addClass("overflow-hidden");
 }
 
 function hideModal() {
     $('#hide').removeClass("hideme");
     $('.modal').addClass("overflow-hidden");
-    $('body').removeClass("overflow-hidden");
+    $('html').removeClass("overflow-hidden");
 }
 
 $(".service").hover(function () {

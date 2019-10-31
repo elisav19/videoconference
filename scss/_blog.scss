@@ -1,6 +1,9 @@
 .filters-list {
+  width: 100%;
   margin-bottom: 40px;
+  padding-left: 0;
   list-style: none;
+  flex-wrap: wrap;
 
   li {
     font-size: 16px;
@@ -24,6 +27,8 @@
 }
 
 .projects-list {
+  padding-left: 30px;
+  padding-right: 35px;
   margin: auto;
 }
 

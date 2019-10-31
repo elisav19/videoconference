@@ -2,7 +2,12 @@
   font-family: Garnata Regular;
   src: url(../font/garnata-display-font/GarnataRegular.woff); }
 
+html {
+  overflow-x: hidden; }
+
 body {
+  min-width: 320px;
+  overflow: hidden !important;
   background: #fff;
   font-family: "Inconsolata";
   font-weight: 400;
@@ -13,12 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
-.container {
-  width: 100%;
-  max-width: 1300px; }
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0; }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
 
 .hideme {
   opacity: 0; }
@@ -111,7 +113,7 @@ body {
   transition: all .2s linear; }
 
 .toggle-menu i:nth-child(1) {
-  top: 5px; }
+  top: 4px; }
 
 .toggle-menu i:nth-child(2) {
   top: 10px; }
@@ -133,6 +135,9 @@ body {
 .social {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 13%;
   z-index: 1; }
@@ -300,8 +305,8 @@ body {
     color: #fff;
     background: #cfa144; }
 
-.projects {
-  margin-right: -50px; }
+.projects-list {
+  margin-right: -80px !important; }
 
 .project {
   width: 100%;
@@ -403,6 +408,9 @@ body {
   margin: 0;
   text-align: center; }
 
+.modal {
+  min-width: 320px; }
+
 .modal-full .modal-content {
   min-height: 100vh; }
 
@@ -446,7 +454,9 @@ body {
   display: block; }
 
 .team-photo {
-  height: 280px; }
+  width: 100%;
+  height: 280px;
+  margin: 0 auto; }
 
 .team-name {
   margin: 30px 0 0;
@@ -522,7 +532,6 @@ body {
   text-transform: uppercase; }
 
 .features-text {
-  width: 280px;
   font-size: 15px;
   letter-spacing: 2px;
   color: #fff;
@@ -585,8 +594,11 @@ body {
   text-align: center; }
 
 .filters-list {
+  width: 100%;
   margin-bottom: 40px;
-  list-style: none; }
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap; }
   .filters-list li {
     font-size: 16px;
     padding: 5px 20px;
@@ -601,6 +613,8 @@ body {
   min-height: 100vh; }
 
 .projects-list {
+  padding-left: 30px;
+  padding-right: 35px;
   margin: auto; }
 
 .project-item {
@@ -895,3 +909,146 @@ textarea[type=text]:not(.browser-default):focus {
   line-height: 2;
   color: #f9f9f9;
   letter-spacing: 3px; }
+
+@media only screen and (min-width: 1380px) {
+  .container {
+    max-width: 1300px; } }
+
+@media only screen and (max-width: 1450px) {
+  .project-item {
+    width: 550px; } }
+
+@media only screen and (max-width: 1380px) {
+  .project-title {
+    font-size: 20px; }
+  .project-subtitle {
+    font-size: 15px; }
+  .about-content {
+    width: 85%;
+    padding-left: 50px; } }
+
+@media only screen and (max-width: 1200px) {
+  .features-item {
+    width: 250px; }
+  .features-text {
+    top: 170%;
+    text-align: center; } }
+
+@media only screen and (max-width: 1000px) {
+  .content-title {
+    margin-bottom: 10px;
+    font-size: 70px; }
+  .content-subtitle {
+    margin-bottom: 40px; }
+  .team-photo {
+    height: 220px; }
+  .team-name {
+    margin: 0; } }
+
+@media only screen and (max-width: 992px) {
+  .features-item {
+    width: 100%;
+    margin-bottom: 50px; }
+  .features-text {
+    top: 110%; }
+  .about-title {
+    margin-top: 30px; }
+  .about-text {
+    margin-bottom: 30px; }
+  .post-tags_block a {
+    margin-bottom: 10px; }
+  a.author-link {
+    float: none !important; } }
+
+@media only screen and (max-width: 800px) {
+  .content-title {
+    font-size: 50px;
+    letter-spacing: 15px; }
+  .content-btn {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 767px) {
+  .social-item {
+    border: 0; }
+  .project-content {
+    width: 100%; }
+  .team {
+    margin-bottom: 20px; }
+  .team-photo {
+    width: 75%; }
+  .features-text {
+    top: 130%; }
+  .service-title {
+    margin-bottom: 5px; }
+  .project-wrapper p {
+    font-size: 14px; }
+    .project-wrapper p .date {
+      font-size: 14px !important; } }
+
+@media only screen and (max-width: 700px) {
+  .content-title {
+    font-size: 30px; }
+  .content-text {
+    margin-bottom: 40px;
+    font-size: 15px; }
+  .projects {
+    margin-right: -20px; }
+  .project {
+    padding-right: 20px;
+    margin-bottom: 20px; }
+  .modal-img {
+    height: 300px; }
+  .close {
+    right: 10px; } }
+
+@media only screen and (max-width: 603px) {
+  .project {
+    margin-bottom: 0; }
+  .project-wrapper p .date {
+    font-size: 42px !important; } }
+
+@media only screen and (max-width: 575px) {
+  .project {
+    margin-bottom: 20px; }
+  .project-content {
+    width: 70%; }
+  .features-text {
+    top: 90%;
+    padding-left: 20px; }
+  .about-content {
+    padding-left: 10px; }
+  .service {
+    padding: 0 50px; } }
+
+@media only screen and (max-width: 465px) {
+  .section-title {
+    font-size: 30px; }
+  .modal-title {
+    font-size: 35px; }
+  .team-photo {
+    width: 100%; }
+  .project-wrapper h1,
+  .project-wrapper a.project-link {
+    font-size: 18px !important; } }
+
+@media only screen and (max-width: 375px) {
+  .social {
+    bottom: 5%; }
+  .project-info h3 {
+    font-size: 20px; }
+  .project-info h4 {
+    font-size: 15px; }
+  .modal-title {
+    font-size: 25px; }
+  .service {
+    padding: 0 10px; }
+  .project-wrapper {
+    padding: 25px 20px; }
+    .project-wrapper p .date {
+      font-size: 20px !important; } }
+
+@media only screen and (max-width: 320px) {
+  html {
+    overflow: auto; }
+  body {
+    overflow-x: auto; } }

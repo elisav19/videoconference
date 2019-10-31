@@ -3,8 +3,17 @@
   src: url(../font/garnata-display-font/GarnataRegular.woff);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  min-width: 320px;
+
+  overflow: hidden !important;
+
   background: #fff;
+
   font-family: "Inconsolata";
   font-weight: 400;
   font-size: 15px;
@@ -16,8 +25,6 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1300px;
 
   &-fluid {
     padding-left: 0;
@@ -59,3 +66,4 @@ body {
 @import "_post";
 @import "_contact";
 @import "_footer";
+@import "_media";

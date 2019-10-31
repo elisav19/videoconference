@@ -2,6 +2,10 @@
     width: 100%;
     margin: 0 auto;
 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     position: absolute;
     bottom: 13%;
     z-index: 1;

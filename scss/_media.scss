@@ -1,0 +1,263 @@
+@media only screen and (min-width: 1380px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .project-item {
+        width: 550px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-subtitle {
+        font-size: 15px;
+    }
+
+    .about-content {
+        width: 85%;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .features-item {
+        width: 250px;
+    }
+
+    .features-text {
+        top: 170%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .content-title {
+        margin-bottom: 10px;
+        font-size: 70px;
+    }
+
+    .content-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .team-photo {
+        height: 220px;
+    }
+
+    .team-name {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .features-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .features-text {
+        top: 110%;
+    }
+
+    .about-title {
+        margin-top: 30px;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+    }
+
+    .post-tags_block {
+        a {
+            margin-bottom: 10px;
+        }
+    }
+
+    a.author-link {
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content-title {
+        font-size: 50px;
+        letter-spacing: 15px;
+    }
+
+    .content-btn {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .social-item {
+        border: 0;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .team {
+        margin-bottom: 20px;
+    }
+
+    .team-photo {
+        width: 75%;
+    }
+
+    .features-text {
+        top: 130%;
+    }
+
+    .service-title {
+        margin-bottom: 5px;
+    }
+
+    .project-wrapper {
+        p {
+            font-size: 14px;
+
+            .date {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content-title {
+        font-size: 30px;
+    }
+
+    .content-text {
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+
+    .projects {
+        margin-right: -20px;
+    }
+
+    .project {
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .modal-img {
+        height: 300px;
+    }
+
+    .close {
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 603px) {
+    .project {
+        margin-bottom: 0;
+    }
+
+    .project-wrapper {
+        p {
+            .date {
+                font-size: 42px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .project-content {
+        width: 70%;
+    }
+
+    .features-text {
+        top: 90%;
+        padding-left: 20px;
+    }
+
+    .about-content {
+        padding-left: 10px;
+    }
+
+    .service {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .modal-title {
+        font-size: 35px;
+    }
+
+    .team-photo {
+        width: 100%;
+    }
+
+    .project-wrapper {
+
+        h1,
+        a.project-link {
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .social {
+        bottom: 5%;
+    }
+
+    .project-info {
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+    }
+
+    .modal-title {
+        font-size: 25px;
+    }
+
+    .service {
+        padding: 0 10px;
+    }
+
+    .project-wrapper {
+        padding: 25px 20px;
+
+        p {
+            .date {
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        overflow: auto;
+    }
+
+    body {
+        overflow-x: auto;
+    }
+}
